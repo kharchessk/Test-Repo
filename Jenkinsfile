@@ -11,11 +11,11 @@ pipeline {
   stages {
         
 	stage('Deploy to repository') {
-	  when {
-		 expression {
-			  return params.UPLOAD_TO_REPOSITORY
-		  }
-	  }
+	//  when {
+		// expression {
+			 // return params.UPLOAD_TO_REPOSITORY
+		 // }
+	//  }
 	  steps {
 		echo 'Updating version before uploading to repository...'
 		sh 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'

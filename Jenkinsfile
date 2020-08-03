@@ -1,12 +1,12 @@
 pipeline {
   agent any
-  parameters {
- 	booleanParam (
-	  defaultValue: false,
-	  description: 'Upload this version to repository?',
-	  name : 'https://github.com/kharchessk/Test-Repo.git')
+  //parameters {
+ 	//booleanParam (
+	 // defaultValue: false,
+	 // description: 'Upload this version to repository?',
+	 // name : 'https://github.com/kharchessk/Test-Repo.git')
   	  
-  }
+//  }
   
   stages {
         

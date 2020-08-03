@@ -7,7 +7,7 @@ pipeline {
 	booleanParam (
 	  defaultValue: false,
 	  description: 'Upload this version to repository?',
-	  name :'https://github.com/kharchessk/Test-Repo.git')
+	  name :'UPLOAD_TO_REPOSITORY')
 	  
   }
  
@@ -21,11 +21,11 @@ pipeline {
 	  }
 	  steps {
 		echo 'Updating version before uploading to repository...'
-		sh 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
+		bat 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
 		echo 'Deploying to respository...'
-		sh 'mvn -DskipTests clean deploy'
+		bat 'mvn -DskipTests clean deploy'
 		echo 'Tagging version'
-		sh 'mvn -Dusername="jenkins" scm:tag'
+		bat 'mvn -Dusername="jenkins" scm:tag'
 	  }
 	}
 	

@@ -7,7 +7,7 @@ pipeline {
 	booleanParam (
 	  defaultValue: false,
 	  description: 'Upload this version to repository?',
-	  name :'UPLOAD_TO_REPOSITORY')
+	  name :'github.com/kharchessk/Test-Repo.git')
 	  
   }
  

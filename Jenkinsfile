@@ -16,7 +16,7 @@ pipeline {
 	stage('Deploy to repository') {
 	  when {
 		 expression {
-			  return params.UPLOAD_TO_REPOSITORY
+			  return params.github.com/kharchessk/Test-Repo.git
 		  }
 	  }
 	  steps {

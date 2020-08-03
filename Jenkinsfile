@@ -7,7 +7,7 @@ pipeline {
 	booleanParam (
 	  defaultValue: false,
 	  description: 'Upload this version to repository?',
-	  name :'github.com/kharchessk/Test-Repo.git')
+	  name :'UPLOAD_TO_REPOSITORY')
 	  
   }
  
@@ -16,7 +16,7 @@ pipeline {
 	stage('Deploy to repository') {
 	  when {
 		 expression {
-			  return params.github.com/kharchessk/Test-Repo.git
+			  return params.UPLOAD_TO_REPOSITORY
 		  }
 	  }
 	  steps {

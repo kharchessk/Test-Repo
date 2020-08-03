@@ -28,6 +28,6 @@ pipeline {
 		sh 'mvn -Dusername="jenkins" scm:tag'
 	  }
 	}
-	...
+	
   }
 }

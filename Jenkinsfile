@@ -23,6 +23,10 @@ pipeline {
 		bat 'mvn -DskipTests clean deploy'
 		echo 'Tagging version'
 		bat 'mvn -Dusername="jenkins" scm:tag'
+		bat 'mvn clean deploy'
+		echo 'Tagging version'
+		bat 'mvn scm:tag'
+		 
 	  }
 	}
 

@@ -18,12 +18,12 @@ pipeline {
 	  }
 	  steps {
 		echo 'Updating version before uploading to repository...'
-		bat 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
+
+		sh 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
 		echo 'Deploying to respository...'
-		bat 'mvn clean deploy'
+		sh 'mvn -DskipTests clean deploy'
 		echo 'Tagging version'
-		bat 'mvn scm:tag'
-		  
+		sh 'mvn -Dusername="jenkins" scm:tag'
 	  }
 	}
 

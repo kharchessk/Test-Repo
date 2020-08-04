@@ -16,7 +16,10 @@
 	<description>Demo project for Spring Boot</description>
 
 	<scm>
-		<connection>scm:git:https://github.com/kharchessk/Test-Repo.git</connection>
+		<connection>scm:git:@github.com/kharchessk/Test-Repo.git</connection>
+		<developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
+        <url>https://github.com//kharchessk/Test-Repo</url>
+        <tag>HEAD</tag>
 	</scm>
 
 	<properties>

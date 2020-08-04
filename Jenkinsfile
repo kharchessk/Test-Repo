@@ -19,7 +19,7 @@ pipeline {
 		echo 'Deploying to respository...'
 		bat 'mvn -DskipTests clean deploy'
 		echo 'Tagging version'
-		bat 'mvn -Dusername="jenkins" scm:tag'
+		bat 'mvn -Dusername="admin" scm:tag'
 	  }
 	}
 

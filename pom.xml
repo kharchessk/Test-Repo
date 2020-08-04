@@ -29,7 +29,7 @@
     <repository>
       <id>Github</id>
       <name>kharchessk</name>
-      <url>https://github.com/kharchessk/Test-Repo.git</url>
+      <url>github.com/kharchessk/Test-Repo.git</url>
     </repository>
   </distributionManagement>
 	

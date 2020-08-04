@@ -15,7 +15,7 @@ pipeline {
 	  }
 	  steps {
 		echo 'Updating version before uploading to repository...'
-		bat 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
+		bat 'mvn build-helper:parse-version versions:set -DnewVersion=\\${parsedVersion.majorVersion}.\\${parsedVersion.minorVersion}.\\${parsedVersion.incrementalVersion}-BUILD-${BUILD_NUMBER} versions:commit'
 		echo 'Deploying to respository...'
 	
 		echo 'Tagging version'

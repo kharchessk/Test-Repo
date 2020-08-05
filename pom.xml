@@ -18,7 +18,7 @@
 	<scm>
 		<connection>scm:git:@github.com/kharchessk/Test-Repo.git</connection>
 		<developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
-        <url>https://github.com//kharchessk/Test-Repo</url>
+        <url>http://github.com//kharchessk/Test-Repo</url>
         <tag>HEAD</tag>
 	</scm>
 
@@ -30,9 +30,9 @@
 	
 	<distributionManagement>
     <repository>
-      <id>Github</id>
+      <id>http://github.com</id>
       <name>kharchessk</name>
-      <url>https://github.com/kharchessk/Test-Repo.git</url>
+      <url>http://github.com/kharchessk/Test-Repo.git</url>
     </repository>
   </distributionManagement>
 	

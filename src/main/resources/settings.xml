@@ -6,4 +6,21 @@
         <password>kharcheSSK@5937</password>
     </server>
   </servers>
+  
+    <proxies>
+   <proxy>
+      <id>example-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.github.com</host>
+      <port>8082</port>
+      <username>admin</username>
+      <password>jenkins123</password>
+      <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+  
+  
+  
+  
 </settings>

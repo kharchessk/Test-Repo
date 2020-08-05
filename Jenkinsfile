@@ -1,14 +1,14 @@
 pipeline {
   agent any
   parameters {
-
+ 
 	booleanParam (
 	  defaultValue: false,
 	  description: 'Upload this version to repository?',
 	  name : 'UPLOAD_TO_REPOSITORY')
-  
+   
   }
- 
+  
   stages {
         
 	stage('Deploy to repository') {

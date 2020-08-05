@@ -1,9 +1,9 @@
 <settings>  
   <servers>
     <server>
-      <id>Github</id>
-      <username>kharchessk</username>
-        <password>kharcheSSK@5937</password>
+      <id>github.com</id>
+      <username>admin</username>
+        <password>jenkins123</password>
     </server>
   </servers>
   

@@ -23,7 +23,7 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://my.gitlab-server.com/myproject.git</connection>
+		<connection>scm:git:https://github.com/kharchessk/Test-Repo.git</connection>
 	</scm>
 
 	<dependencies>

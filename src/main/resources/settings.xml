@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server>
-  <id>my.gitlab-server.com</id>
+  <id>github.com/kharchessk/Test-Repo.git</id>
   <username>jenkins</username>
   <password>*******</password>
 </server>

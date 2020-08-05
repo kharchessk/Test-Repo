@@ -1,3 +1,4 @@
+
 pipeline {
   agent any
   parameters {
@@ -6,11 +7,11 @@ pipeline {
 	  defaultValue: false,
 	  description: 'Upload this version to repository?',
 	  name : 'UPLOAD_TO_REPOSITORY')
-   
-  }
   
+  }
+
   stages {
-        
+       
 	stage('Deploy to repository') {
 	  when {
 		 expression {

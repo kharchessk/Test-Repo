@@ -19,7 +19,7 @@ pipeline {
 	  steps {
 		sh "mvn clean package -U"
 		               sh "mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-build${env.BUILD_NUMBER} versions:commit"
-		               sh "mvn -Dmaven.test.failure.ignore=true deploy"
+		               sh "mvn -DskipTests clean deploy"
 		               echo 'Tagging version'
 		     
 			            sh "mvn -Dusername='kharchessk@gmail.com' scm:tag"

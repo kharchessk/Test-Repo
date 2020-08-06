@@ -17,9 +17,9 @@
 
 	<scm>
 		<connection>scm:git:@github.com/kharchessk/Test-Repo.git</connection>
-		<developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
+		<!-- <developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
         <url>https://github.com//kharchessk/Test-Repo</url>
-        <tag>HEAD</tag>
+        <tag>HEAD</tag> -->
 	</scm>
 
 	<properties>

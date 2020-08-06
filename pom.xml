@@ -9,7 +9,7 @@
 		<version>2.1.16.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.gitdemo</groupId>
+<!-- 	<groupId>com.example.gitdemo</groupId> -->
 	<artifactId>demo</artifactId>
 	<version>1.1.3-SNAPSHOT</version>
 	<name>demo</name>
@@ -18,7 +18,9 @@
 	<scm>
 		<connection>scm:git:@github.com/kharchessk/Test-Repo.git</connection>
 		<developerConnection>scm:git:[fetch=]https://github.com//kharchessk/Test-Repo[push=]ssh://kharchessk@github.com/~/Test-Repo.git</developerConnection>
-		<!-- <developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
+		
+		
+	<!-- <developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
         <url>https://github.com//kharchessk/Test-Repo</url>
         <tag>HEAD</tag> -->
 	</scm>
@@ -59,13 +61,26 @@
 	<build>
 		<plugins>
 
-
-
-			<!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> 
-				<executions> <execution> <id>get-the-git-infos</id> <goals> <goal>revision</goal> 
-				</goals> </execution> <execution> <id>validate-the-git-infos</id> <goals> 
-				<goal>validateRevision</goal> </goals> </execution> </executions> <configuration> 
-				... </configuration> </plugin> -->
+<!-- 	<plugin>
+		<groupId>pl.project13.maven</groupId>
+		<artifactId>git-commit-id-plugin</artifactId>
+		<executions>
+			<execution>
+				<id>get-the-git-infos</id>
+				<goals>
+					<goal>revision</goal>
+				</goals>
+			</execution>
+			<execution>
+				<id>validate-the-git-infos</id>
+				<goals>
+					<goal>validateRevision</goal>
+				</goals>
+			</execution>
+		</executions>
+		<configuration>
+		</configuration>
+	</plugin>  -->
 
 			<plugin>
 				<groupId>pl.project13.maven</groupId>

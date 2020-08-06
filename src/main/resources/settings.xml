@@ -1,7 +1,7 @@
 <settings>  
   <servers>
     <server>
-      <id>http://github.com</id>
+      <id>https://github.com</id>
       <username>admin</username>
         <password>jenkins123</password>
     </server>
@@ -11,10 +11,10 @@
    <proxy>
       <id>example-proxy</id>
       <active>true</active>
-      <protocol>http</protocol>
+      <protocol>https</protocol>
       <host>proxy.github.com</host>
       <port>8082</port>
-      <username>jenkins</username>
+      <username>admin</username>
       <password>jenkins123</password>
       <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
     </proxy>

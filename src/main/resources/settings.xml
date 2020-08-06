@@ -2,7 +2,7 @@
   <servers>
     <server>
       <id>http://github.com</id>
-      <username>jenkins</username>
+      <username>admin</username>
         <password>jenkins123</password>
     </server>
   </servers>

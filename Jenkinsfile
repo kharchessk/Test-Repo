@@ -1,5 +1,8 @@
 pipeline {
   agent any
+	tools {
+		maven 'M2_HOME'
+		}
   parameters {
 	booleanParam (
 	  defaultValue: false,

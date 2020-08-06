@@ -11,11 +11,11 @@ pipeline {
  }
   stages {
 	stage('Deploy to repository') {
-	  when {
-		expression {
-			  return params.UPLOAD_TO_REPOSITORY
-		 }
-	  }
+	//  when {
+		//expression {
+			 // return params.UPLOAD_TO_REPOSITORY
+		 //}
+	//  }
 	  steps {
 				//sh "mvn clean package -U"
 		             //  sh "mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-build${env.BUILD_NUMBER} versions:commit"

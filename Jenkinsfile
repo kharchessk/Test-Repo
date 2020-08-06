@@ -25,7 +25,7 @@ pipeline {
 		sh 'mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.incrementalVersion}-BUILD${BUILD_NUMBER} versions:commit'
 		echo 'Deploying to respository...'
 		sh 'mvn -DskipTests clean deploy'
-			            sh "mvn -Dusername='kharchessk@gmail.com' scm:tag"
+			            sh "mvn -Dusername='GITHUB' scm:tag"
 	  }
 	}
 

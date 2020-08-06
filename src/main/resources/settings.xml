@@ -1,7 +1,7 @@
 <settings>  
   <servers>
     <server>
-      <id>https://github.com</id>
+      <id>github</id>
       <username>admin</username>
         <password>jenkins123</password>
     </server>

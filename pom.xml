@@ -30,7 +30,7 @@
 	
 	<distributionManagement>
     <repository>
-      <id>https://github.com</id>
+      <id>github</id>
       <name>kharchessk</name>
       <url>https://github.com/kharchessk/Test-Repo.git</url>
     </repository>

@@ -40,7 +40,7 @@
 
 	</properties>
 
-<!-- 	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>github</id>
 			<name>kharchessk</name>
@@ -53,7 +53,8 @@
             <id>internal</id>
             <name>Archiva Managed Internal Repository</name>
             <url>http://localhost:8080/repository/internal/</url>
-        </repository>
+        </repository>        
+        
     </distributionManagement>
 
 	<dependencies>

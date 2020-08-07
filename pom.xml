@@ -25,7 +25,7 @@
 		<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> -->
 		<developerConnection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</developerConnection>
 		<url>http://github.com/kharchessk/Test-Repo.git</url>
-		<tag>HEAD</tag>
+	<!-- 	<tag>HEAD</tag> -->
 
 	</scm>
 
@@ -55,8 +55,6 @@
             <url>http://localhost:8080/repository/internal/</url>
         </repository>
     </distributionManagement>
-	
-	
 
 	<dependencies>
 		<dependency>

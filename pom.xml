@@ -23,9 +23,9 @@
        <!--  <url>https://github.com//kharchessk/Test-Repo</url>
         <tag>HEAD</tag>  -->
         
-      	<connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> 
-      		
-		<developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
+      	<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> 
+ -->      		
+		<developerConnection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</developerConnection>
       	<url>http://github.com/kharchessk/Test-Repo.git</url> <tag>HEAD</tag> 
       	
 

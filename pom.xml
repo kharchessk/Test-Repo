@@ -19,12 +19,13 @@
 		<!-- <connection>scm:git:@https://github.com/kharchessk/Test-Repo.git</connection> -->
 		<!-- <developerConnection>scm:git:[fetch=]https://github.com//kharchessk/Test-Repo[push=]ssh://kharchessk@github.com/~/Test-Repo.git</developerConnection> -->
 		
-		
-	<!-- <developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
-        <url>https://github.com//kharchessk/Test-Repo</url>
-        <tag>HEAD</tag> -->
+	
+       <!--  <url>https://github.com//kharchessk/Test-Repo</url>
+        <tag>HEAD</tag>  -->
         
       	<connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> 
+      		
+		<developerConnection>scm:git:git@github.com/kharchessk/Test-Repo.git</developerConnection>
       	<url>http://github.com/kharchessk/Test-Repo.git</url> <tag>HEAD</tag> 
       	
 
@@ -35,7 +36,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-	  <!--   <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version> -->
+	 <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version> 
 	 
 	</properties>
 	

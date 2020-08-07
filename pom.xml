@@ -27,10 +27,6 @@
 		<url>http://github.com/kharchessk/Test-Repo.git</url>
 		<tag>HEAD</tag>
 
-
-
-
-
 	</scm>
 
 	<properties>
@@ -44,13 +40,23 @@
 
 	</properties>
 
-	<distributionManagement>
+<!-- 	<distributionManagement>
 		<repository>
 			<id>github</id>
 			<name>kharchessk</name>
 			<url>https://github.com/kharchessk/Test-Repo.git</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement> -->
+	
+	<distributionManagement>
+        <repository>
+            <id>internal</id>
+            <name>Archiva Managed Internal Repository</name>
+            <url>http://localhost:8080/repository/internal/</url>
+        </repository>
+    </distributionManagement>
+	
+	
 
 	<dependencies>
 		<dependency>
@@ -73,10 +79,6 @@
 
 	<build>
 		<plugins>
-
-
-
-
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

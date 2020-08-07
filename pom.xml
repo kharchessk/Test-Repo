@@ -3,12 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	 <parent>
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.16.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
-	</parent> 
+	</parent>
 	<groupId>com.example.gitdemo</groupId>
 	<artifactId>demo</artifactId>
 	<version>1.1.3-SNAPSHOT</version>
@@ -18,40 +18,39 @@
 	<scm>
 		<!-- <connection>scm:git:@https://github.com/kharchessk/Test-Repo.git</connection> -->
 		<!-- <developerConnection>scm:git:[fetch=]https://github.com//kharchessk/Test-Repo[push=]ssh://kharchessk@github.com/~/Test-Repo.git</developerConnection> -->
-		
-	
-       <!--  <url>https://github.com//kharchessk/Test-Repo</url>
-        <tag>HEAD</tag>  -->
-        
-      	<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> 
- -->      		
-		<developerConnection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</developerConnection>
-      	<url>http://github.com/kharchessk/Test-Repo.git</url> <tag>HEAD</tag> 
-      	
 
-        
-        
-        
+
+		<!-- <url>https://github.com//kharchessk/Test-Repo</url> <tag>HEAD</tag> -->
+
+		<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> -->
+		<developerConnection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</developerConnection>
+		<url>http://github.com/kharchessk/Test-Repo.git</url>
+		<tag>HEAD</tag>
+
+
+
+
+
 	</scm>
 
 	<properties>
-	<project.scm.id>github</project.scm.id>
-	<java.version>1.8</java.version>
-	<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version> 
-	 
+		<project.scm.id>github</project.scm.id>
+		<java.version>1.8</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+
 	</properties>
-	
-	<!-- <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>kharchessk</name>
-      <url>https://github.com/kharchessk/Test-Repo.git</url>
-    </repository>
-  </distributionManagement>
- -->
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>kharchessk</name>
+			<url>https://github.com/kharchessk/Test-Repo.git</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId> 
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -71,75 +70,86 @@
 	<build>
 		<plugins>
 
-<!-- 	<plugin>
-		<groupId>pl.project13.maven</groupId>
-		<artifactId>git-commit-id-plugin</artifactId>
-		<executions>
-			<execution>
-				<id>get-the-git-infos</id>
-				<goals>
-					<goal>revision</goal>
-				</goals>
-			</execution>
-			<execution>
-				<id>validate-the-git-infos</id>
-				<goals>
-					<goal>validateRevision</goal>
-				</goals>
-			</execution>
-		</executions>
-		<configuration>
-		</configuration>
-	</plugin>  -->
+
+
+
 
 			<plugin>
-				<groupId>pl.project13.maven</groupId>
-				<artifactId>git-commit-id-plugin</artifactId>
-				<configuration>
-					<excludeProperties>git.build.user.*,git.commit.user.*,git.remote.*,git.closest.*</excludeProperties>
-				</configuration>
-			</plugin>		
-						
-		 <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.9.5</version>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<tag>${project.version}</tag>
-					<username>kharchessk@gmail.com</username>
-					<password>kharcheSSK@5937</password>
-       
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.mapstruct</groupId>
+							<artifactId>mapstruct-processor</artifactId>
+							<version>${version.mapstruct}</version>
+						</path>
+					</annotationProcessorPaths>
 				</configuration>
-			</plugin> 
-			
-<!-- 			<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-release-plugin</artifactId>
-    <version>3.0.0-M1</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-scm-plugin</artifactId>
-            <version>1.9.5</version>
-        </dependency>
-    </dependencies>
-</plugin>
-		 -->	
-			
+			</plugin>
+			<!-- Maven Release Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${maven-release-plugin-version}</version>
 
-<!-- <plugin>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>2.8.1</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-</plugin> -->
+			</plugin>
+
+
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> 
+				<executions> <execution> <id>get-the-git-infos</id> <goals> <goal>revision</goal> 
+				</goals> </execution> <execution> <id>validate-the-git-infos</id> <goals> 
+				<goal>validateRevision</goal> </goals> </execution> </executions> <configuration> 
+				</configuration> </plugin> -->
+
+			<!-- <plugin> <groupId>pl.project13.maven</groupId> <artifactId>git-commit-id-plugin</artifactId> 
+				<configuration> <excludeProperties>git.build.user.*,git.commit.user.*,git.remote.*,git.closest.*</excludeProperties> 
+				</configuration> </plugin> -->
+
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-scm-plugin</artifactId> 
+				<version>1.9.5</version> <configuration> <tag>${project.version}</tag> <username>kharchessk@gmail.com</username> 
+				<password>kharcheSSK@5937</password> </configuration> </plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-release-plugin</artifactId> 
+				<version>3.0.0-M1</version> <dependencies> <dependency> <groupId>org.apache.maven.plugins</groupId> 
+				<artifactId>maven-scm-plugin</artifactId> <version>1.9.5</version> </dependency> 
+				</dependencies> </plugin> -->
+
+
+			<!-- <plugin> <artifactId>maven-deploy-plugin</artifactId> <version>2.8.1</version> 
+				<executions> <execution> <id>default-deploy</id> <phase>deploy</phase> <goals> 
+				<goal>deploy</goal> </goals> </execution> </executions> </plugin> -->
 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

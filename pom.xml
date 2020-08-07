@@ -23,7 +23,7 @@
 		<!-- <url>https://github.com//kharchessk/Test-Repo</url> <tag>HEAD</tag> -->
 
 		<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> -->
-		<developerConnection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</developerConnection>
+		<developerConnection>scm:git:http://${kharcheSSK@5937}:${kharchessk@gmail.com}@github.com/kharchessk/Test-Repo.git</developerConnection>
 		<url>http://github.com/kharchessk/Test-Repo.git</url>
 	 	<!-- <tag>git-jenkins-demo</tag> 
  -->

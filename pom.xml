@@ -23,10 +23,14 @@
 		<!-- <url>https://github.com//kharchessk/Test-Repo</url> <tag>HEAD</tag> -->
 
 		<!-- <connection>scm:git:http://${kharchessk@gmail.com}:${kharcheSSK@5937}@github.com/kharchessk/Test-Repo.git</connection> -->
-		<developerConnection>scm:git:http://${kharcheSSK@5937}:${kharchessk@gmail.com}@github.com/kharchessk/Test-Repo.git</developerConnection>
-		<url>http://github.com/kharchessk/Test-Repo.git</url>
+		<!-- <developerConnection>scm:git:http://${kharcheSSK@5937}:${kharchessk@gmail.com}@github.com/kharchessk/Test-Repo.git</developerConnection>
+		<url>http://github.com/kharchessk/Test-Repo.git</url> -->
 	 	<!-- <tag>git-jenkins-demo</tag> 
- -->
+	  -->	
+	 	<developerConnection>scm:git:https://github.com/kharchessk/Test-Repo.git</developerConnection>
+		<tag>HEAD</tag>
+	 	
+
 	</scm>
 
 	<properties>
@@ -101,6 +105,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>${maven-release-plugin-version}</version>
+				
+				<configuration>
+					<localCheckout>true</localCheckout> <!-- must be true -->
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+				
 			</plugin>
 			
 

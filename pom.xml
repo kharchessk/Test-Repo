@@ -97,8 +97,8 @@
 				<version>1.9.5</version>
 				<configuration>
 					<tag>${project.version}</tag>
-					<username>kharchessk@gmail.com</username>
-					<password>kharcheSSK@5937</password>
+					<!-- <username>kharchessk@gmail.com</username>
+					<password>kharcheSSK@5937</password> -->
        
 				</configuration>
 			</plugin>

@@ -37,6 +37,10 @@
 		<project.scm.id>github</project.scm.id>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		 <maven-release-plugin-version>3.0.0-M1</maven-release-plugin-version>
+		 <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <version.mapstruct>1.2.0.Final</version.mapstruct>
 
 	</properties>
 

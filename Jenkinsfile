@@ -23,7 +23,7 @@ pipeline {
 		echo 'Deploying to respository...'
 		sh 'mvn -DskipTests clean deploy'
 		echo 'Tagging version'
-		sh 'mvn -Dusername="jenkins" scm:tag'
+		sh 'mvn -Dusername="kharchessk@gmail.com" scm:tag'
 	  }
 	}
 	
